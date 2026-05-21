@@ -1,0 +1,54 @@
+{
+  "system_instruction": "Act as an Expert Full-Stack Developer and UI/UX Designer to build a premium, high-trust law firm and attorney portfolio website.",
+  "project_details": {
+    "project_name": "Hsini Legal Partners",
+    "domain": "legal.hsini.dev",
+    "contact_email": "contact@hsini.dev",
+    "target_audience": "High-net-worth individuals, corporate clients, and individuals seeking elite legal representation.",
+    "inspiration": "Top-tier, award-winning law firm websites of 2026. Think 'Editorial Luxury' combined with 'Tropical Modernism' or 'Architectural Restraint'—clean lines, confident use of white space, and subtle, purposeful motion."
+  },
+  "tech_stack": {
+    "framework": "Next.js (App Router) OR SvelteKit (Optimized for Core Web Vitals and SEO)",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "graphics_and_animations": "WebGL and Three.js (for a subtle, abstract 3D architectural element or gently rotating 'scales of justice' in the hero background), Framer Motion for scroll-based reveals.",
+    "state_management": "Zustand (React) or Svelte Stores (for managing multi-step client intake forms)"
+  },
+  "architecture_and_features": [
+    {
+      "feature": "Editorial Hero Section",
+      "description": "A full-viewport, immersive landing area featuring oversized, confident serif typography. The background should include a subtle, slow-moving WebGL/Three.js abstract geometry (representing pillars of justice or stability) that reacts slightly to cursor movement."
+    },
+    {
+      "feature": "E-E-A-T Optimized Attorney Bio",
+      "description": "A dedicated section establishing Experience, Expertise, Authoritativeness, and Trustworthiness. Features a high-quality, editorial-style portrait, bar admissions, published works, and credentials."
+    },
+    {
+      "feature": "Modular Practice Areas",
+      "description": "A card-based UI system displaying areas of practice (e.g., Corporate Law, Intellectual Property, Criminal Defense). Hovering over a card should trigger a smooth micro-animation revealing a brief description."
+    },
+    {
+      "feature": "Case Results & Social Proof",
+      "description": "A visually structured layout highlighting past victories and client testimonials. Use minimal lines and dividers to separate data points (e.g., '$2.5M Settlement - Corporate Dispute')."
+    },
+    {
+      "feature": "Secure Client Intake Form",
+      "description": "A multi-step, ADA-accessible, and highly secure consultation booking form linked directly to 'contact@hsini.dev'. Must include progressive disclosure (asking simple questions first) to increase conversion rates."
+    }
+  ],
+  "design_system": {
+    "colors": {
+      "primary": "#0f172a (Deep Slate/Navy for extreme professionalism and trust)",
+      "secondary": "#b45309 (Rich Gold/Bronze for luxury accents and CTAs)",
+      "background": "#f8fafc (Crisp, calming off-white to allow generous white space)",
+      "surface": "#ffffff (Pure white for floating cards)",
+      "text_primary": "#1e293b (Dark slate for maximum readability)",
+      "text_secondary": "#64748b (Muted tone for dates, disclaimers, and metadata)"
+    },
+    "typography": {
+      "headings": "Playfair Display or Cinzel (Elegant, oversized serif for authority and editorial feel)",
+      "body": "Inter or Lora (Highly legible, ADA-compliant fonts for heavy text consumption)"
+    }
+  },
+  "prompt_for_ai_builder": "Generate the complete boilerplate and core UI components for a premium law firm portfolio at 'legal.hsini.dev'. Initialize a modern framework (Next.js/SvelteKit) using TypeScript and Tailwind CSS. Implement an 'Editorial Luxury' design system featuring deep navy tones, gold accents, and oversized serif typography. Build an immersive Hero section that incorporates a subtle Three.js/WebGL background animation (abstract pillars or geometric light). Develop modular components for 'Practice Areas', an E-E-A-T optimized 'Attorney Profile', and a structured 'Case Results' grid. Create a secure, multi-step 'Schedule Consultation' form that routes inquiries to 'contact@hsini.dev'. Ensure the entire site adheres to strict ADA accessibility guidelines (WCAG 2.2 AA), is highly responsive, and utilizes generous white space to convey confidence and prestige."
+}

@@ -1,0 +1,35 @@
+name: Compile & Verify Deployment Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
+
+    - name: Set Up Node.js Environment
+      uses: actions/setup-node@v4
+      with:
+        node-size: 20
+        cache: 'npm'
+
+    - name: Install Project Dependencies
+      run: npm ci
+
+    - name: Static Syntax Linting
+      run: npm run lint
+
+    - name: Production Compiler Validation
+      run: npm run build
+      env:
+        # Mock values to permit compilation checks
+        NEXT_PUBLIC_SANITY_PROJECT_ID: "mock_project_id"
+        NEXT_PUBLIC_SANITY_DATASET: "production"
+        RESEND_API_KEY: "mock_resend_key"
