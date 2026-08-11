@@ -1,5 +1,6 @@
 # 🏛️ Hsini Legal Partners — Enterprise Legal Portfolio & Consultation Platform
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-low.hsini.dev-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white)](https://low.hsini.dev)
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -9,8 +10,9 @@
 
 > A state-of-the-art, luxury digital platform built for high-stakes corporate law, litigation, and international legal consultation. Engineered with cutting-edge web technologies, real-time consultation dispatch, interactive global office maps, and seamless Sanity CMS legal whitepaper integration.
 
-**Developer Website:** [https://hsini.dev](https://hsini.dev)  
-**Maintained by:** [Mohamed Hsini](https://hsini.dev) (`contact@hsini.dev`)
+🔗 **Live Demo:** [https://low.hsini.dev](https://low.hsini.dev)  
+🌐 **Developer Website:** [https://hsini.dev](https://hsini.dev)  
+👤 **Maintained by:** [Mohamed Hsini](https://hsini.dev) (`contact@hsini.dev`)
 
 ---
 
