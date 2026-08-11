@@ -52,3 +52,47 @@
   },
   "prompt_for_ai_builder": "Generate the complete boilerplate and core UI components for a premium law firm portfolio at 'legal.hsini.dev'. Initialize a modern framework (Next.js/SvelteKit) using TypeScript and Tailwind CSS. Implement an 'Editorial Luxury' design system featuring deep navy tones, gold accents, and oversized serif typography. Build an immersive Hero section that incorporates a subtle Three.js/WebGL background animation (abstract pillars or geometric light). Develop modular components for 'Practice Areas', an E-E-A-T optimized 'Attorney Profile', and a structured 'Case Results' grid. Create a secure, multi-step 'Schedule Consultation' form that routes inquiries to 'contact@hsini.dev'. Ensure the entire site adheres to strict ADA accessibility guidelines (WCAG 2.2 AA), is highly responsive, and utilizes generous white space to convey confidence and prestige."
 }
+
+
+{
+  "system_instruction": "Act as an Expert Full-Stack Developer to build the Phase 2 backend, CMS, and advanced interactive features for a premium law firm portfolio.",
+  "project_details": {
+    "project_name": "Hsini Legal Partners - Phase 2 (Enterprise Features)",
+    "domain": "legal.hsini.dev",
+    "target_audience": "High-net-worth individuals requiring secure, confidential communication and seeking authoritative legal insights."
+  },
+  "tech_stack": {
+    "framework": "Next.js (App Router) with Server Actions",
+    "language": "TypeScript",
+    "form_management": "React Hook Form + Zod (for strict schema validation)",
+    "email_provider": "Resend or SendGrid",
+    "content_management": "Sanity.io (Headless CMS)",
+    "animations": "Framer Motion (AnimatePresence for form steps)"
+  },
+  "architecture_and_features": [
+    {
+      "feature": "Secure Multi-Step Intake Engine",
+      "description": "Complete the 'Schedule Consultation' component. Use Framer Motion to slide smoothly between Step 1 (Identity), Step 2 (Segment/Legal Issue), Step 3 (Details/Uploads), and Step 4 (Review). Implement Zod validation and a Next.js Server Action to sanitize inputs and securely email the payload to contact@hsini.dev."
+    },
+    {
+      "feature": "Editorial Insights & Publications (CMS)",
+      "description": "Integrate a Headless CMS to power an 'Insights' page. Create a dynamic route (/insights/[slug]) that fetches and beautifully renders legal whitepapers, firm news, and case studies using the established editorial typography."
+    },
+    {
+      "feature": "Interactive Global Presence Map",
+      "description": "Build a custom, dark-themed interactive map (using Mapbox or WebGL) displaying the firm's global office locations. Clicking a location should reveal contact details and local managing partners."
+    },
+    {
+      "feature": "Enterprise Security & Compliance",
+      "description": "Implement strict rate-limiting on the intake form to prevent abuse. Add a highly stylized, non-intrusive GDPR/CCPA cookie consent banner that matches the premium aesthetic."
+    },
+    {
+      "feature": "Deployment & Infrastructure Setup",
+      "description": "Configure the repository workflows via GitHub. Set up the necessary environment variables and build scripts to ensure a flawless automated deployment pipeline directly to Vercel or a custom Ubuntu server environment."
+    }
+  ],
+  "design_system": {
+    "guidelines": "Maintain the existing 'Editorial Luxury' theme. Use deep navy (#0f172a) and gold (#b45309). Ensure all new form states (errors, loading spinners, success messages) look bespoke and high-end, avoiding default browser stylings."
+  },
+  "prompt_for_ai_builder": "Generate the Phase 2 full-stack components for 'legal.hsini.dev'. First, build a robust multi-step form engine using React Hook Form, Zod, and Framer Motion's AnimatePresence for the Consultation section. Write the Next.js Server Action to securely process this form. Second, set up the configuration and front-end dynamic routes for a Headless CMS (Sanity) to display an 'Insights & Whitepapers' blog grid and detail page. Third, build a 'Global Offices' section featuring a custom, dark-themed interactive map. Finally, implement a sophisticated GDPR cookie banner and provide the deployment configuration files for a seamless GitHub-based CI/CD pipeline."
+}
