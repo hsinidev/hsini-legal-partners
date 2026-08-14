@@ -37,6 +37,8 @@
 - 🌐 **Interactive Global Office Map**:
   - Interactive map displaying physical locations across key financial centers (New York, London, Tokyo, Paris, Dubai).
   - Quick drawer view featuring local managing partner details, contact info, and emergency legal hotline dispatch.
+- 🏢 **Firm Gallery & Heritage Archive**:
+  - Visual showcase of partner council, court victories, and headquarters architecture.
 - 🛡️ **Enterprise Privacy & Security Compliance**:
   - GDPR & CCPA compliant interactive cookie banner with local storage consent options.
   - Strict input sanitization, security headers, and WCAG 2.2 AA accessibility standards.
@@ -73,6 +75,8 @@ hsini-legal-partners/
 │   ├── 📄 AttorneyProfile.tsx  # Managing partner profiles & accolades
 │   ├── 📄 CaseResults.tsx      # Historic settlements & track record counter
 │   ├── 📄 CookieBanner.tsx     # GDPR/CCPA cookie consent dialog
+│   ├── 📄 DeveloperModal.tsx   # Developer profile modal
+│   ├── 📄 FirmGallery.tsx      # Interactive firm gallery
 │   ├── 📄 Footer.tsx           # Global footer, disclaimer & developer credit
 │   ├── 📄 GlobalMap.tsx        # Interactive global offices map component
 │   ├── 📄 Header.tsx           # Sticky navigation header with mobile drawer

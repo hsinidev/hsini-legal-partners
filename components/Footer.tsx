@@ -1,9 +1,12 @@
 "use client";
 
-import { Scale, Mail, Phone, MapPin } from "lucide-react";
+import { useState } from "react";
+import { Scale, Mail, Phone, MapPin, Code, Sparkles } from "lucide-react";
+import DeveloperModal from "@/components/DeveloperModal";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [isDevModalOpen, setIsDevModalOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -97,8 +100,40 @@ export default function Footer() {
             <strong>Attorney Advertising Notice:</strong> Under the ethical rules of many jurisdictions, this website may be considered Attorney Advertising. Prior results described herein do not guarantee a similar outcome in future representation.
           </p>
           <p className="text-xs text-slate-400 leading-relaxed">
-            Content provided on legal.hsini.dev is for informational purposes only and does not establish a formal attorney-client relationship.
+            Content provided on low.hsini.dev is for informational purposes only and does not establish a formal attorney-client relationship.
           </p>
+
+          {/* Developer Info Card Badge */}
+          <div className="pt-2">
+            <button
+              onClick={() => setIsDevModalOpen(true)}
+              className="w-full group text-left p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/5 cursor-pointer"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-400 text-[10px] font-bold tracking-wider uppercase border border-amber-500/20">
+                  <Sparkles className="w-3 h-3" /> Architect
+                </span>
+                <span className="text-[11px] text-amber-400 font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
+                  View Profile &rarr;
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/profile.png"
+                  alt="Hsini Mohamed"
+                  className="w-10 h-10 rounded-xl object-cover border border-slate-700 bg-slate-800"
+                />
+                <div className="overflow-hidden">
+                  <h4 className="text-xs font-bold text-white group-hover:text-amber-400 transition-colors truncate">
+                    Hsini Mohamed
+                  </h4>
+                  <p className="text-[11px] text-slate-400 truncate">
+                    Full-Stack Developer & SaaS Architect
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -109,12 +144,25 @@ export default function Footer() {
         <div>
           &copy; {currentYear} Hsini Legal Partners LLP. All rights reserved.
         </div>
-        <div className="flex space-x-6">
+        <div className="flex items-center space-x-6">
+          <button 
+            onClick={() => setIsDevModalOpen(true)}
+            className="hover:text-amber-400 transition-colors duration-300 flex items-center gap-1 cursor-pointer font-medium"
+          >
+            <Code className="w-3.5 h-3.5" /> Developer: Hsini Mohamed
+          </button>
           <a href="#" className="hover:text-slate-300 transition-colors duration-300">Privacy Charter</a>
           <a href="#" className="hover:text-slate-300 transition-colors duration-300">Terms of Engagement</a>
           <a href="#" className="hover:text-slate-300 transition-colors duration-300">Accessibility Statement</a>
         </div>
       </div>
+
+      {/* Developer Profile Modal */}
+      <DeveloperModal
+        isOpen={isDevModalOpen}
+        onClose={() => setIsDevModalOpen(false)}
+      />
     </footer>
   );
 }
+

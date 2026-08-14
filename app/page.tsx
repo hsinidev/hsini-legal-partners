@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PracticeAreas from "@/components/PracticeAreas";
 import AttorneyProfile from "@/components/AttorneyProfile";
+import FirmGallery from "@/components/FirmGallery";
 import CaseResults from "@/components/CaseResults";
 import IntakeForm from "@/components/IntakeForm";
 import GlobalMap from "@/components/GlobalMap";
@@ -19,7 +20,7 @@ export default function Home() {
       {/* 2. Main Page Sections Assembly */}
       <main className="flex-grow">
         
-        {/* Full-screen WebGL Interactive Hero */}
+        {/* Full-screen Interactive Hero */}
         <Hero />
 
         {/* Modular service grid cards with hover animations */}
@@ -27,6 +28,9 @@ export default function Home() {
 
         {/* E-E-A-T high-authority attorney profile bio */}
         <AttorneyProfile />
+
+        {/* Selective 3-Image Firm Architecture & Chambers Showcase */}
+        <FirmGallery />
 
         {/* Case Victories scoreboard and client reviews spotlight */}
         <CaseResults />

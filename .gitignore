@@ -10,12 +10,16 @@
 /.next/
 /out/
 
-# production
+# production & distribution
 /build
+/dist
+*.zip
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+*.code-workspace
 
 # debug
 npm-debug.log*

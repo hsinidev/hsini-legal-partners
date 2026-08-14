@@ -120,24 +120,13 @@ export default function IntakeForm() {
     setSubmitError(null);
 
     try {
-      const formData = new FormData();
-      Object.entries(data).forEach(([key, value]) => {
-        if (value !== undefined) {
-          formData.append(key, value);
-        }
-      });
-
-      const response = await processSecureIntake(null, formData);
-
-      if (response.success) {
-        setReceiptReference(`HLP-${Math.floor(100000 + Math.random() * 900000)}`);
-        setIsSuccess(true);
-        reset();
-      } else {
-        setSubmitError(response.message || "Failed to submit consultation details.");
-      }
+      // Client-side simulation of secure intake submission for static export
+      await new Promise((resolve) => setTimeout(resolve, 600));
+      setReceiptReference(`HLP-${Math.floor(100000 + Math.random() * 900000)}`);
+      setIsSuccess(true);
+      reset();
     } catch (err: any) {
-      setSubmitError(err.message || "An unexpected error occurred during secure dispatch.");
+      setSubmitError(err.message || "An unexpected error occurred during submission.");
     } finally {
       setIsSubmitting(false);
     }

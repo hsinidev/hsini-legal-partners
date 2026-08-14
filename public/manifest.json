@@ -1,0 +1,16 @@
+{
+  "name": "Hsini Legal Partners | Elite Counsel",
+  "short_name": "Hsini Legal",
+  "description": "World-class corporate counsel and strategic legal representation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1128",
+  "theme_color": "#0a1128",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  distDir: "dist",
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
-  // We can add further compiler options or custom configuration here if needed
 };
 
 export default nextConfig;
